@@ -1,6 +1,5 @@
 html,
 body {
-	min-height: 100%;
 	height: 100%;
 	width: 100%;
 	margin: 0;
@@ -158,7 +157,7 @@ header a:visited {
 	position: absolute;
 	z-index: 999;
 	background-color: var(--gray-white-color);
-	height: 250px;
+	height: 200px;
 	width: 200px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -261,10 +260,10 @@ h3 {
 
 .body-area {
 	width: 100%;
-	height: 100%;
-	background-image: url('../images/image_background_body.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+	object-fit: cover;
+	z-index: -1;
+	position: relative;
+	display: none;
 }
 
 .heading-words {
@@ -316,9 +315,13 @@ h3 {
 	padding-left: 15px;
 }
 
+#end-body-area {
+	object-fit: cover;
+	width: 100%;
+	display: none;
+}
 #footer-area {
 	background-color: #323339;
-	/* height: auto; */
 	padding: 45px;
 }
 
@@ -391,7 +394,6 @@ h3 {
 	.heading-words-box {
 		background-color: var(--orange-color);
 		aspect-ratio: 1 / 1;
-		/* height: 100%; */
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -496,6 +498,7 @@ h3 {
 		margin-bottom: 15px;
 	}
 	.body-area {
+		display: block;
 		height: 700px;
 	}
 	#background-body-content {
@@ -503,10 +506,8 @@ h3 {
 		max-width: 100%;
 	}
 	.body-float-area {
-		/* position: relative; */
 		margin-left: 10%;
-		padding-top: 270px;
-		/* top: 270px; */
+		margin-top: -430px;
 	}
 
 	.input-contact-style {
@@ -599,26 +600,24 @@ h3 {
 		padding: 50px;
 	}
 	.body-float-area {
-		padding-top: 315px; /**/
+		margin-top: -390px; /**/
 	}
 	#end-body-area {
-		background-image: url('/assets/images/background_body_2.png');
-		background-size: cover;
-		background-repeat: no-repeat;
 		height: 440px;
+		display: block;
 	}
 	.box-section-end-body {
-		top: 120px; /**/
+		margin-top: -320px; /**/
 		margin-right: 120px;
 		height: 600px;
 		background-color: var(--orange-color);
 	}
-
 	#footer-area {
 		height: 400px;
 		padding: 50px;
 		padding-left: 10%;
 	}
+
 	.col-lg-2 {
 		width: 16.66%;
 	}
@@ -659,11 +658,10 @@ h3 {
 		height: 790px;
 	}
 	.body-float-area {
-		padding-top: 350px; /**/
+		margin-top: -430px; /**/
 	}
-
-	.link-list-heading {
-		font-size: 14px;
+	#link-list {
+		width: 70%;
 	}
 }
 
@@ -681,7 +679,7 @@ h3 {
 		padding: 30px 175px 25px 175px;
 	}
 	.body-float-area {
-		padding-top: 280px; /**/
+		margin-top: -580px; /**/
 	}
 	.column-content-section-words {
 		padding-top: 50px;
@@ -696,7 +694,7 @@ h3 {
 		height: 650px;
 	}
 	.box-section-end-body {
-		top: 400px; /**/
+		margin-top: -200px; /**/
 		margin-right: 175px;
 	}
 }
@@ -712,12 +710,15 @@ h3 {
 		padding: 70px 110px 90px 110px;
 	}
 	.body-float-area {
-		padding-top: 100px; /**/
+		margin-top: -750px; /**/
 	}
 	.body-area {
-		height: 850px;
+		height: 1200px;
 	}
 	.thumbnail > img {
 		height: 500px;
+	}
+	#link-list {
+		width: 50%;
 	}
 }
