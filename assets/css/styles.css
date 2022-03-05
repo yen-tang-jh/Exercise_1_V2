@@ -263,14 +263,15 @@ h3 {
 	object-fit: cover;
 	z-index: -1;
 	position: relative;
-	display: none;
+	height: 120px;
 }
 
 .heading-words {
 	font-family: 'Raleway';
 	font-weight: 300;
 	font-size: 33px;
-	padding: 20px 10px 20px 45px;
+	padding-left: 45px;
+	margin-bottom: 0;
 }
 
 .heading-words-area {
@@ -284,6 +285,10 @@ h3 {
 .column-content-section-words {
 	padding: 0 45px 0 45px;
 	margin-bottom: 15px;
+}
+
+.body-float-area {
+	margin-top: -120px;
 }
 
 #contact-area {
@@ -381,6 +386,9 @@ h3 {
 	.col-esm-6 {
 		width: 50%;
 	}
+	.heading-words {
+		padding: 20px 10px 20px 45px;
+	}
 	.heading-words-area,
 	.heading-words-area img {
 		display: flex;
@@ -390,7 +398,12 @@ h3 {
 	.heading-words-area {
 		justify-content: center;
 	}
-
+	.body-area {
+		display: none;
+	}
+	.body-float-area {
+		margin-top: 0;
+	}
 	.heading-words-box {
 		background-color: var(--orange-color);
 		aspect-ratio: 1 / 1;
@@ -398,6 +411,7 @@ h3 {
 		justify-content: center;
 		align-items: center;
 	}
+
 	.input-contact-style {
 		width: 150px;
 		margin: 5px;
