@@ -681,6 +681,9 @@ h3 {
 	.box-section {
 		margin-left: 420px;
 	}
+	.heading-section {
+		width: 480px;
+	}
 	.padding-words-column {
 		padding-right: 150px;
 	}
@@ -753,6 +756,9 @@ h3 {
 	}
 	.body-float-area {
 		margin-top: -750px; /**/
+	}
+	.heading-section {
+		width: 100%;
 	}
 	.body-area {
 		height: 1200px;
