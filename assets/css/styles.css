@@ -63,7 +63,7 @@ header a:visited {
 	font-family: 'Raleway';
 	src: url('/assets/fonts/Raleway-Font/Raleway-Light.ttf');
 	font-weight: 300;
-	font-style: light;
+	font-style: normal;
 	font-display: swap;
 }
 
@@ -272,6 +272,7 @@ h3 {
 	font-size: 33px;
 	padding-left: 45px;
 	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .heading-words-area {
@@ -326,7 +327,7 @@ h3 {
 	display: none;
 }
 #footer-area {
-	background-color: #323339;
+	background-color: var(--black-gray-color);
 	padding: 45px;
 }
 
@@ -537,7 +538,6 @@ h3 {
 		height: 500px;
 		padding: 50px;
 		padding-left: 10%;
-		font-size: 11px;
 	}
 
 	.display-hide {
@@ -591,7 +591,6 @@ h3 {
 		height: 400px;
 		background-color: var(--orange-color);
 	}
-
 	.column-content-section-body {
 		padding: 0 10px 5px 10px;
 	}
@@ -674,8 +673,14 @@ h3 {
 	.body-float-area {
 		margin-top: -430px; /**/
 	}
+	.heading-words-box {
+		align-items: flex-start;
+	}
+	.heading-words {
+		margin-top: 90px;
+	}
 	#link-list {
-		width: 70%;
+		width: 74%;
 	}
 }
 
@@ -704,12 +709,18 @@ h3 {
 	.body-area {
 		height: 860px;
 	}
+	.heading-words {
+		padding-right: 100px;
+	}
 	#end-body-area {
 		height: 650px;
 	}
 	.box-section-end-body {
 		margin-top: -200px; /**/
 		margin-right: 175px;
+	}
+	#link-list {
+		width: 70%;
 	}
 }
 
@@ -729,8 +740,14 @@ h3 {
 	.body-area {
 		height: 1200px;
 	}
+	.column-content-section-words {
+		padding-top: 80px;
+	}
 	.thumbnail > img {
 		height: 500px;
+	}
+	.heading-words {
+		margin-top: 150px;
 	}
 	#link-list {
 		width: 50%;
