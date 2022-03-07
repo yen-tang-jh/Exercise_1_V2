@@ -36,6 +36,10 @@ a {
 	color: var(--white-color);
 }
 
+input {
+	padding-left: 15px;
+}
+
 header a:focus,
 header a:visited {
 	box-shadow: 0 3px var(--orange-color);
@@ -221,15 +225,23 @@ h3 {
 	font-weight: 300;
 	font-size: 19px;
 }
+
 .column-content {
 	padding: 25px 45px;
 }
+
 .button-arrow {
 	background: none;
 	border: none;
 	margin: 0;
 	margin-top: 10px;
 	padding: 0;
+	cursor: pointer;
+}
+
+.arrow-white-circle:active,
+.arrow-orange-circle:active {
+	transform: translateY(4px);
 }
 
 .button-arrow-area {
@@ -322,7 +334,6 @@ h3 {
 ::placeholder {
 	font-family: 'Montserrat';
 	color: var(--blue-gray-color);
-	padding-left: 15px;
 }
 
 #end-body-area {
